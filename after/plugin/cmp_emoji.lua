@@ -1,2 +1,2 @@
-require'cmp'.register_source('emoji', require'cmp_emoji'.new())
+require'cmp'.register_source('nerdfont', require'cmp_nerdfont'.new())
 
