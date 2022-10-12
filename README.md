@@ -2,6 +2,9 @@
 
 nvim-cmp source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet). 
 
+## Usage
+Nerdfont completion is triggered via `:`, like with emojis. 
+
 ## Setup
 
 ```lua
