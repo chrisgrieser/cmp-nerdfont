@@ -26,12 +26,12 @@ source.complete = function(self, params, callback)
       self.insert_items = vim.tbl_map(function(item)
         item.word = nil
         return item
-      end, require('cmp_emoji.items')())
+      end, require('cmp_nerdfont.items')())
     end
     callback(self.insert_items)
   else
     if not self.commit_items then
-      self.commit_items = require('cmp_emoji.items')()
+      self.commit_items = require('cmp_nerdfont.items')()
     end
     callback(self.commit_items)
   end
