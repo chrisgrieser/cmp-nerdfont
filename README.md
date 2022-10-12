@@ -1,22 +1,17 @@
-# cmp-emoji
+# cmp-nerdfont
 
-nvim-cmp source for emojis.
+nvim-cmp source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet). 
 
-# Setup
+## Setup
 
 ```lua
 require'cmp'.setup {
   sources = {
-    { name = 'emoji' }
+    { name = 'nerdfont' }
   }
 }
 ```
 
-# Option
+## Credits
 
-#### insert (type: boolean)
-
-Speficy emoji should be insert or not.
-
-Default: `false`
-
+Except for using emojis instead of nerdfont icons, this is pretty much only a copy of [hrsh7th/cmp-emoji](https://github.com/hrsh7th/cmp-emoji), so all credits to `hsrsh7th`.
