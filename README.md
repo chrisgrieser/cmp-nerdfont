@@ -22,15 +22,15 @@ The dataset ([items.lua](./lua/cmp_nerdfont/items.lua)) can be recreated by runn
 ```bash
 source="https://raw.githubusercontent.com/loichyan/nerdfix/main/src/cached.txt"
 echo "return function() return {" > items.lua
-echo "$(curl -s "$source" | tail -n+2 | grep -v "obsolete$" | sed 's/\(.*\) \(....\)/\{ word = ":\1"; label = "\\u\2 \1"; insertText = "\\u\2"; filterText =":\1" };/')" >> items.lua
-echo "}" >> items.lua
+echo "$(curl -s "$source" | tail -n+2 | grep -v "obsolete$" | sed -E 's/(.*) (.*)/\{ word = ":\1"; label = "\\u\2 \1"; insertText = "\\u\2"; filterText =":\1" };/')" >> items.lua
+echo "} end" >> items.lua
 ```
 
 To create the `.csv` containing simply names and icons, run:
 
 ```bash
 source="https://raw.githubusercontent.com/loichyan/nerdfix/main/src/cached.txt"
-echo "$(curl -s "$source" | grep -v "obsolete$" | sed 's/\([a-z-]*\) \(....\)/\1;\\u\2/')" > nerdfonts.csv
+echo "$(curl -s "$source" | grep -v "obsolete$" | sed -E 's/(.*) (.*)/\1;\\u\2/')" > nerdfonts.csv
 ```
 
 ## Credits
