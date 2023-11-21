@@ -2,8 +2,10 @@
 # cmp-nerdfont
 <!-- LTeX: enabled=true -->
 
-`nvim-cmp` source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet). 
-Over 9000 Nerdfont icons, [obsolete icons already excluded](https://www.reddit.com/r/neovim/comments/122f5ro/announcing_nerdfix_a_checker_for_obsolete_nerd/).
+`nvim-cmp` source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet).
+Over 9000 Nerdfont icons, [obsolete icons already
+excluded](https://www.reddit.com/r/neovim/comments/122f5ro/announcing_nerdfix_a_checker_for_obsolete_nerd/).
+Includes the news Neovim Nerdfont icon (requires Nerdfont v3.1.0).
 
 ## Usage
 Nerdfont completion is triggered via `:`, like emojis. 
