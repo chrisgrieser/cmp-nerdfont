@@ -1,6 +1,8 @@
+<!-- LTeX: enabled=false -->
 # cmp-nerdfont
+<!-- LTeX: enabled=true -->
 
-nvim-cmp source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet). 
+`nvim-cmp` source for [nerdfont icons](https://www.nerdfonts.com/cheat-sheet). 
 Over 9000 Nerdfont icons, [obsolete icons already excluded](https://www.reddit.com/r/neovim/comments/122f5ro/announcing_nerdfix_a_checker_for_obsolete_nerd/).
 
 ## Usage
@@ -17,7 +19,8 @@ require'cmp'.setup {
 ```
 
 ## Source Nerdfont icon
-The dataset ([items.lua](./lua/cmp_nerdfont/items.lua)) can be recreated by running the following command in the shell:
+The dataset ([items.lua](./lua/cmp_nerdfont/items.lua)) can be recreated by
+running the following command in the shell:
 
 ```bash
 source="https://raw.githubusercontent.com/loichyan/nerdfix/main/src/cached.txt"
@@ -33,6 +36,13 @@ source="https://raw.githubusercontent.com/loichyan/nerdfix/main/src/cached.txt"
 echo "$(curl -s "$source" | grep -v "obsolete$" | sed -E 's/(.*) (.{4,5})/\1;\\u\2/')" > nerdfonts.csv
 ```
 
+<!-- vale Google.FirstPerson = NO -->
 ## Credits
-- Except for Nerdfont icons instead of emojis, this is simply a copy of [hrsh7th/cmp-emoji](https://github.com/hrsh7th/cmp-emoji), so all credit for this plugin goes to `hsrsh7th`.
-- Thanks to [@loichyan](https://www.reddit.com/r/neovim/comments/122f5ro/announcing_nerdfix_a_checker_for_obsolete_nerd/) for [nerdfix](https://github.com/loichyan/nerdfix), from where I got the [list of nerdfont names and their codepoints](https://github.com/loichyan/nerdfix/blob/main/src/cached.txt).
+- Except for Nerdfont icons instead of emojis, this is simply a copy of
+  [hrsh7th/cmp-emoji](https://github.com/hrsh7th/cmp-emoji), so all credit for
+  this plugin goes to `hsrsh7th`.
+- Thanks to
+  [@loichyan](https://www.reddit.com/r/neovim/comments/122f5ro/announcing_nerdfix_a_checker_for_obsolete_nerd/)
+  for [nerdfix](https://github.com/loichyan/nerdfix), from where I got the [list
+	of nerdfont names and their
+	codepoints](https://github.com/loichyan/nerdfix/blob/main/src/cached.txt).
