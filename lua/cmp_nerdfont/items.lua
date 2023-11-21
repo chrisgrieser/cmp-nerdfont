@@ -9115,4 +9115,6 @@ return function() return {
 { word = ":nf-weather-wind_south_west"; label = " nf-weather-wind_south_west"; insertText = ""; filterText = ":nf-weather-wind_south_west" };
 { word = ":nf-weather-wind_west"; label = " nf-weather-wind_west"; insertText = ""; filterText = ":nf-weather-wind_west" };
 { word = ":nf-weather-windy"; label = " nf-weather-windy"; insertText = ""; filterText = ":nf-weather-windy" };
+{ word = ":nf-custom-neovim"; label = " nf-custom-neovim"; insertText = ""; filterText = ":nf-custom-neovim" };
+{ word = ":nf-linux-neovim"; label = " nf-linux-neovim"; insertText = ""; filterText = ":nf-linux-neovim" };
 } end
