@@ -20,7 +20,12 @@ require'cmp'.setup {
 }
 ```
 
-## Source Nerdfont icon
+## Performance
+Due to the large number of icons, these source can cause some lagging. If you
+experience such issues, you should tweak the `cmp` performance settings (`:help
+cmp-config.performance`).
+
+## Source Nerdfont icons
 The dataset ([items.lua](./lua/cmp_nerdfont/items.lua)) can be recreated by
 running the following command in the shell:
 
